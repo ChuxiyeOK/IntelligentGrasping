@@ -3,27 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自动播放视频</title>
+    <title>Your GitHub Page</title>
 </head>
 <body>
+    <h1>Welcome to My GitHub Page!</h1>
 
-<video id="myVideo" width="640" height="360" autoplay loop>
-    <source src="experiment video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
-<script>
-    // 获取video元素
-    var video = document.getElementById('myVideo');
-
-    // 监听视频结束事件，重新播放
-    video.addEventListener('ended', function() {
-        video.play();
-    });
-
-    // 如果浏览器支持自动播放，可以不写下面这行
-    video.play();
-</script>
+    <!-- 嵌入视频的代码 -->
+    <video width="640" height="360" controls>
+        <source src="experiment video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
 </body>
 </html>
